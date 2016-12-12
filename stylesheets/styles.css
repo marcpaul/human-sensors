@@ -108,7 +108,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:860px;
+  width:100%;
   margin:0 auto;
 }
 
@@ -154,11 +154,11 @@ th {
 }
 
 img {
-  max-width:100%;
+  /*width:100%;*/
 }
 
 header {
-  width:270px;
+  width:20%;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -224,7 +224,7 @@ header ul a strong {
 }
 
 section {
-  width:500px;
+  width:60%;
   float:right;
   padding-bottom:50px;
 }
@@ -241,7 +241,7 @@ hr {
 }
 
 footer {
-  width:270px;
+  width:20%;
   float:left;
   position:fixed;
   bottom:50px;
@@ -321,4 +321,12 @@ footer {
     font-size:12pt;
     color:#444;
   }
+}
+
+menuitem {
+    display: list-item;
+}
+
+menu strong {
+    margin-left: -20px;
 }
