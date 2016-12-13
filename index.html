@@ -38,7 +38,7 @@
             <menu type="toolbar">
                 <menuitem><a href="#sensors-included">Sensors included</a></menuitem>
                 <br>
-                <strong>Hardware setup:</strong>
+                <strong>Electronic Components:</strong>
                 <menuitem><a href="#hardware-olimex">Olimex</a></menuitem>
                 <menuitem><a href="#hardware-ti">Texas Instruments</a></menuitem>
                 <menuitem><a href="#hardware-is">InvenSense</a></menuitem>
@@ -64,7 +64,7 @@
             </ul>
 
             <h3>
-<a id="hardware-setup" class="anchor" href="#hardware-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hardware setup:</h3>
+<a id="hardware-setup" class="anchor" href="#hardware-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Electronic Components:</h3>
 
             <div class="hardware" id="hardware-olimex">
                 <img src="images/olimexino-stm32-map.jpg" alt="Olimexino STM32" usemap="stm32-map">
@@ -76,12 +76,27 @@
                 <!-- #$AUTHOR:MARC PAUL -->
                 <area shape="circle" coords="312,37,30"  nohref="nohref" data-tooltip-content="used to control leds, buttons, switches etc." data-tooltip-title="digital pins">
                 <area shape="circle" coords="474,227,30"  nohref="nohref" data-tooltip-title="analog pins" data-tooltip-content="used to sample analog signals from ecg shield and other sensors.">
-                <area shape="circle" coords="98,297,30"  nohref="nohref" data-tooltip-title="UEXT connector" data-tooltip-content="the UEXT connector is an Olimex standard. all essential communication interfaces are present: RS-232, SPI, I2C and 3.3V/ground.">
+                <area shape="circle" coords="98,297,30"  nohref="nohref" data-tooltip-title="UEXT connector" data-tooltip-content="the UEXT connector is an Olimex standard. all essential communication interfaces are present: RS232, SPI, I2C and 3.3V/ground.">
                 <area shape="circle" coords="62,134,30"  nohref="nohref" data-tooltip-title="SD-CARD connector" data-tooltip-content="all data can be saved to SD-CARD on the backside of the board.">
                 </map>
                 <p>
                     <a href="https://www.olimex.com/Products/Duino/STM32/OLIMEXINO-STM32/open-source-hardware" target="_blank">Olimex Olimexino-STM32</a> board with STM32F103RBT6 microcontroller
                 </p>
+                <h3>Libraries</h3>
+                <dd>
+                    <dt>Libmaple/Wire</dt>
+                    <dl class="">
+                        <p>Libraries for the <a href="http://www.leaflabs.com/maple" target="_blank">LeafLabs Maple</a>. Based on Arduino Libraries. The Wire Library handles the communication to I2C devices.</p>
+                    </dl>
+                </dd>
+                <dd>
+                    <dt>SD-CARD</dt>
+                    <dl class="">
+                        <a href="https://github.com/marcpaul/human-sensors/tree/master/libraries/SdFat" target="_blank">Based on the SDFAT Library.</a>
+                        <p>I made some minor changes to the code to work with the Olimexino STM32.
+                        <small><a target="_blank" href="http://code.google.com/p/maple-sdfat/downloads/list">Maple SDFAT Library</a></small></p>
+                    </dl>
+                </dd>
             </div>
             <div class="hardware">
                 <img src="images/mod-mag-map.jpg" alt="Olimex MOD-MAG" usemap="mod-mag-map">
@@ -91,12 +106,19 @@
                 <!-- #$-:Please do not edit lines starting with "#$" -->
                 <!-- #$VERSION:2.3 -->
                 <!-- #$AUTHOR:MARC PAUL -->
-                <area shape="circle" coords="128,310,30"  nohref="nohref" data-tooltip-title="" data-tooltip-content="">
-                <area shape="circle" coords="252,365,30"  nohref="nohref" data-tooltip-title="" data-tooltip-content="">
+                <area shape="circle" coords="128,310,30"  nohref="nohref" data-tooltip-title="Freescale MAG3110" data-tooltip-content="three-axis digital magnetometer">
+                <area shape="circle" coords="252,365,30"  nohref="nohref" data-tooltip-title="UEXT connector" data-tooltip-content="the MOD-MAG uses the I2C interface.">
                 </map>
                 <p>
                     <a href="https://www.olimex.com/Products/Modules/Sensors/MOD-MAG/open-source-hardware" target="_blank">Olimex MOD-MAG</a> 3-axis magnetometer MAG3110
                 </p>
+                <h3>Libraries</h3>
+                <dd>
+                    <dt>MAG 3110</dt>
+                    <dl class="">
+                        <a href="https://github.com/marcpaul/human-sensors/tree/master/libraries/mag3110" target="_blank">Also based on the Arduino Version.</a>
+                    </dl>
+                </dd>
             </div>
             <div class="hardware">
                 <img src="images/mod-lcd3310-map.jpg" alt="Olimex MOD-LCD3310" usemap="mod-lcd3310-map">
@@ -106,11 +128,18 @@
                 <!-- #$-:Please do not edit lines starting with "#$" -->
                 <!-- #$VERSION:2.3 -->
                 <!-- #$AUTHOR:MARC PAUL -->
-                <area shape="circle" coords="242,39,30"  nohref="nohref" data-tooltip-title="" data-tooltip-content="">
+                <area shape="circle" coords="242,39,30"  nohref="nohref" data-tooltip-title="UEXT connector" data-tooltip-content="i used the GPIO interface to drive the LCD.">
                 </map>
                 <p>
                     <a href="https://www.olimex.com/Products/Modules/LCD/MOD-LCD3310/open-source-hardware" target="_blank">Olimex MOD-LCD3310</a> Nokia 3310 LCD display
                 </p>
+                <h3>Libraries</h3>
+                <dd>
+                    <dt>LCD 3310</dt>
+                    <dl class="">
+                        <a href="https://github.com/marcpaul/human-sensors/tree/master/libraries/LCD3310" target="_blank">Based on the demo project for the LPC-P1227.</a>
+                    </dl>
+                </dd>
             </div>
             <div class="hardware">
                 <img src="images/mod-bt-map.jpg" alt="Olimexino MOD-BT" usemap="mod-bt-map">
@@ -120,11 +149,19 @@
                 <!-- #$-:Please do not edit lines starting with "#$" -->
                 <!-- #$VERSION:2.3 -->
                 <!-- #$AUTHOR:MARC PAUL -->
-                <area shape="circle" coords="37,207,30"  nohref="nohref" data-tooltip-title="" data-tooltip-content="">
+                <area shape="circle" coords="37,207,30"  nohref="nohref" data-tooltip-title="UEXT connector" data-tooltip-content="the MOD-MAG uses RS232. all other interfaces should be physically disconnected so you can use several devices on the UEXT bus.">
                 </map>
                 <p>
                     <a href="https://www.olimex.com/Products/Modules/RF/MOD-BT/" target="_blank">Olimex MOD-BT</a> bluetooth module
                 </p>
+                <h3>Libraries</h3>
+                <dd>
+                    <dt>Bluetooth</dt>
+                    <dl class="">
+                        <span>I've included the initialization in </span>
+                        <a href="https://github.com/marcpaul/human-sensors/blob/master/libraries/PP_Ext/analog.cpp" target="_blank">my code</a><span> because you can use simple "AT" commands.</span>
+                    </dl>
+                </dd>
             </div>
             <div class="hardware">
                 <img src="images/shield-ekg-emg-map.jpg" alt="Olimexino SHIELD-EKG-EMG" usemap="shield-ekg-emg-map">
@@ -134,10 +171,10 @@
                 <!-- #$-:Please do not edit lines starting with "#$" -->
                 <!-- #$VERSION:2.3 -->
                 <!-- #$AUTHOR:MARC PAUL -->
-                <area shape="circle" coords="494,114,30"  nohref="nohref" data-tooltip-title="" data-tooltip-content="">
-                <area shape="circle" coords="288,392,30"  nohref="nohref" data-tooltip-title="" data-tooltip-content="">
-                <area shape="circle" coords="453,408,30"  nohref="nohref" data-tooltip-title="" data-tooltip-content="">
-                <area shape="circle" coords="135,142,30"  nohref="nohref" data-tooltip-title="" data-tooltip-content="">
+                <area shape="circle" coords="494,114,30"  nohref="nohref" data-tooltip-title="digital pins" data-tooltip-content="not connected.">
+                <area shape="circle" coords="288,392,30"  nohref="nohref" data-tooltip-title="analog pins" data-tooltip-content="connected to Olimexino STM32 analog inputs.">
+                <area shape="circle" coords="453,408,30"  nohref="nohref" data-tooltip-title="board selector" data-tooltip-content="you can use several boards in one device. on every board one jumper must be closed.">
+                <area shape="circle" coords="135,142,30"  nohref="nohref" data-tooltip-title="input for electrodes" data-tooltip-content="this is a stereo jack used to connect the 3 electrodes.">
                 </map>
                 <p>
                     <a href="https://www.olimex.com/Products/Duino/Shields/SHIELD-EKG-EMG/open-source-hardware" target="_blank">Olimex SHIELD-ECG-EMG</a> ECG/EMG shield for STM32 board
@@ -175,6 +212,13 @@
                 <p>
                     <a href="https://www.invensense.com/products/motion-tracking/6-axis/mpu-6050/" target="_blank">InvenSense MPU 6050</a> motion tracking device
                 </p>
+                <h3>Libraries</h3>
+                <dd>
+                    <dt>MPU 6050</dt>
+                    <dl class="">
+                        <a href="https://github.com/marcpaul/human-sensors/tree/master/libraries/MPU6050" target="_blank">Yes, originally for the Arduino, adapted to STM32.</a>
+                    </dl>
+                </dd>
             </div>
             <div class="hardware" id="hardware-analog">
                 <img src="images/adg-1608.jpg" alt="Analog ADG1608">
@@ -187,6 +231,14 @@
                 <p>
                     <a href="https://www.maximintegrated.com/en/products/digital/real-time-clocks/DS1337.html" target="_blank">Maxim DS1337</a> I2C serial real-time clock
                 </p>
+                <h3>Libraries</h3>
+                <dd>
+                    <dt>DS 1337</dt>
+                    <dl class="">
+                        <a href="https://github.com/marcpaul/human-sensors/tree/master/libraries/ds1337" target="_blank">Based on the Arduino Library.</a>
+                        <p>I made some changes to fit my project. But this version should run on every Olimexino STM32.</p>
+                    </dl>
+                </dd>
             </div>
             <div class="hardware">
                 <img src="images/ds2438.jpg" alt="Maxim DS2438">
