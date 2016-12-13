@@ -56,8 +56,8 @@
 
 body {
   background-color: #fff;
-  padding:50px;
-  font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding:20px;
+  font: 14px/1.5 "Noto Sans";
   color:#727272;
   font-weight:400;
 }
@@ -244,7 +244,7 @@ footer {
   width:20%;
   float:left;
   position:fixed;
-  bottom:50px;
+  bottom:20px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
@@ -329,4 +329,13 @@ menuitem {
 
 menu strong {
     margin-left: -20px;
+}
+
+footer p {
+    margin-bottom: 0px;
+}
+
+.big-fonts {
+    font-size: 12px;
+    line-height: 1.5;
 }

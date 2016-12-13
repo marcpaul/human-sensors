@@ -1,13 +1,13 @@
 <img src="[olimexino-stm32-map] (imported)" width="540" height="454" border="0" usemap="#map" />
 
-<map name="stm32-map">
+<map name="map">
 <!-- #$-:Image map file created by GIMP Image Map plug-in -->
 <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
 <!-- #$-:Please do not edit lines starting with "#$" -->
 <!-- #$VERSION:2.3 -->
 <!-- #$AUTHOR:MARC PAUL -->
-<area shape="circle" coords="319,38,25"  nohref="nohref" />
-<area shape="circle" coords="495,227,25"  nohref="nohref" />
-<area shape="circle" coords="50,142,25"  nohref="nohref" />
-<area shape="circle" coords="74,262,25"  nohref="nohref" />
+<area shape="circle" coords="312,37,30"  nohref="nohref" />
+<area shape="circle" coords="474,227,30"  nohref="nohref" />
+<area shape="circle" coords="98,297,30"  nohref="nohref" />
+<area shape="circle" coords="62,134,30"  nohref="nohref" />
 </map>

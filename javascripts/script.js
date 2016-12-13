@@ -11,7 +11,7 @@ $(document).ready(function() {
         }
     },
     style: {
-        classes: "qtip-dark",
+        classes: "qtip-dark big-fonts",
         tip: {
             corner: false
         }

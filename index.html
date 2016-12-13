@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Human-sensors by marcpaul</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/github-light.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/qtip2/3.0.3/jquery.qtip.min.css">
+    <link rel="stylesheet" href="stylesheets/styles.css">
     <meta name="viewport" content="width=device-width">
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
@@ -63,22 +63,21 @@
 <a id="hardware-setup" class="anchor" href="#hardware-setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hardware setup:</h3>
 
             <div class="hardware" id="hardware-olimex">
-                <img src="images/olimexino-stm32-map.jpg" alt="Olimexino STM32" usemap="stm32-map" >
-                <map name="stm32-map" class="hidden">
+                <img src="images/olimexino-stm32-map.jpg" alt="Olimexino STM32" usemap="stm32-map">
+                <map name="stm32-map">
                 <!-- #$-:Image map file created by GIMP Image Map plug-in -->
                 <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
                 <!-- #$-:Please do not edit lines starting with "#$" -->
                 <!-- #$VERSION:2.3 -->
                 <!-- #$AUTHOR:MARC PAUL -->
-                <area shape="circle" coords="319,38,25"  nohref="nohref" data-tooltip-content="used to control leds, buttons, switches etc." data-tooltip-title="digital pins">
-                <area shape="circle" coords="495,227,25"  nohref="nohref" />
-                <area shape="circle" coords="50,142,25"  nohref="nohref" />
-                <area shape="circle" coords="74,262,25"  nohref="nohref" />
+                <area shape="circle" coords="312,37,30"  nohref="nohref" data-tooltip-content="used to control leds, buttons, switches etc." data-tooltip-title="digital pins">
+                <area shape="circle" coords="474,227,30"  nohref="nohref" data-tooltip-title="analog pins" data-tooltip-content="used to sample analog signals from ecg shield and other sensors.">
+                <area shape="circle" coords="98,297,30"  nohref="nohref" data-tooltip-title="UEXT connector" data-tooltip-content="the UEXT connector is an Olimex standard. all essential communication interfaces are present: RS-232, SPI, I2C and 3.3V/ground.">
+                <area shape="circle" coords="62,134,30"  nohref="nohref" data-tooltip-title="SD-CARD connector" data-tooltip-content="all data can be saved to SD-CARD on the backside of the board.">
                 </map>
                 <p>
                     <a href="https://www.olimex.com/Products/Duino/STM32/OLIMEXINO-STM32/open-source-hardware" target="_blank">Olimex Olimexino-STM32</a> board with STM32F103RBT6 microcontroller
                 </p>
-
             </div>
             <div class="hardware">
                 <img src="images/mod-mag.jpg" alt="Olimex MOD-MAG">
@@ -160,7 +159,8 @@
         </section>
         <footer>
             <p>This project is maintained by <a href="https://github.com/marcpaul">marcpaul</a></p>
-            <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+            <p><small>Hosted on GitHub Pages</small></p>
+            <p><small>Theme based on <a href="https://github.com/orderedlist">orderedlist</a></small></p>
         </footer>
     </div>
     <script src="javascripts/scale.fix.js"></script>
