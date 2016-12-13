@@ -292,7 +292,7 @@ footer p {
 }
 
 .big-fonts {
-    font-family: "noto_sansregular"
+    font-family: "noto_sansregular";
     font-size: 12px;
     line-height: 1.5;
 }
