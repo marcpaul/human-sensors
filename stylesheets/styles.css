@@ -299,4 +299,6 @@ footer p {
 
 .hardware {
     margin-bottom: 100px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 5px 0px rgba(231, 231, 231, 0.6);
 }
