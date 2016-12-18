@@ -46,6 +46,8 @@
                 <menuitem><a href="#hardware-maxim">Maxim</a></menuitem>
                 <br>
                 <menuitem><a href="#my-prototypes">My Prototypes</a></menuitem>
+                <br>
+                <menuitem><a href="#software">IDE/Editors</a></menuitem>
             </menu>
 
 
@@ -80,7 +82,7 @@
                 <area shape="circle" coords="62,134,30"  nohref="nohref" data-tooltip-title="SD-CARD connector" data-tooltip-content="all data can be saved to SD-CARD on the backside of the board.">
                 </map>
                 <p>
-                    <a href="https://www.olimex.com/Products/Duino/STM32/OLIMEXINO-STM32/open-source-hardware" target="_blank">Olimex Olimexino-STM32</a> board with STM32F103RBT6 microcontroller
+                    <span class="octicon link-external"></span><a href="https://www.olimex.com/Products/Duino/STM32/OLIMEXINO-STM32/open-source-hardware" target="_blank">Olimex Olimexino-STM32</a> board with STM32F103RBT6 microcontroller
                 </p>
                 <h3>Libraries</h3>
                 <dd>
@@ -180,6 +182,18 @@
                     <a href="https://www.olimex.com/Products/Duino/Shields/SHIELD-EKG-EMG/open-source-hardware" target="_blank">Olimex SHIELD-ECG-EMG</a> ECG/EMG shield for STM32 board
                 </p>
             </div>
+            <div class="hardware">
+                <img src="images/uextx5.jpg" alt="Olimex UEXT 5-Port Splitter and Extender">
+                <p>
+                    <a href="https://www.olimex.com/Products/Modules/Interface/UEXTx5/open-source-hardware" target="_blank">Olimex UEXT 5-Port Splitter and Extender</a>
+                </p>
+            </div>
+            <div class="hardware">
+                <img src="images/lipo6600.jpg" alt="Olimex LiPo Battery">
+                <p>
+                    <a href="https://www.olimex.com/Products/Power/BATTERY-LIPO6600mAh/" target="_blank">Olimex LiPo Battery</a> 3.7V/6.600mAh
+                </p>
+            </div>
 
 
 
@@ -261,10 +275,10 @@
                 <!-- #$-:Please do not edit lines starting with "#$" -->
                 <!-- #$VERSION:2.3 -->
                 <!-- #$AUTHOR:MARC PAUL -->
-                <area shape="rect" coords="27,111,303,299"  nohref="nohref" data-tooltip-content="" data-tooltip-title="">
-                <area shape="rect" coords="295,30,350,84"  nohref="nohref" data-tooltip-content="" data-tooltip-title="">
-                <area shape="rect" coords="362,74,440,163"  nohref="nohref" data-tooltip-content="" data-tooltip-title="">
-                <area shape="rect" coords="422,185,468,275"  nohref="nohref" data-tooltip-content="" data-tooltip-title="">
+                <area shape="rect" coords="27,111,303,299"  nohref="nohref" data-tooltip-content="This is the DC/DC Converter Block. The Converter is a Recom RNM 0505S. All other parts are filters to reduce noise from the power source. The 5V DC input is on the 2-pin connector." data-tooltip-title="DC/DC Converter">
+                <area shape="rect" coords="295,30,350,84"  nohref="nohref" data-tooltip-content="This is the Right Leg Drive Connector. Like the name suggests you put the electrodes on the Rigth Leg of the Patient." data-tooltip-title="Connector">
+                <area shape="rect" coords="362,74,440,163"  nohref="nohref" data-tooltip-content="The same Op-Amp is used on all boards to amplify the signal." data-tooltip-title="Operational Amplifier">
+                <area shape="rect" coords="422,185,468,275"  nohref="nohref" data-tooltip-content="Connects to first 2-Channel EEG Board. 5V DC Analog (filtered) and 5V DC Digital." data-tooltip-title="Output">
                 </map>
                 <p>EEG Right Leg Drive</p>
             </div>
@@ -276,17 +290,35 @@
                 <!-- #$-:Please do not edit lines starting with "#$" -->
                 <!-- #$VERSION:2.3 -->
                 <!-- #$AUTHOR:MARC PAUL -->
-                <area shape="rect" coords="27,30,135,146"  nohref="nohref" data-tooltip-content="" data-tooltip-title="">
-                <area shape="rect" coords="306,53,367,121"  nohref="nohref" data-tooltip-content="" data-tooltip-title="">
-                <area shape="rect" coords="496,55,563,121"  nohref="nohref" data-tooltip-content="" data-tooltip-title="">
-                <area shape="rect" coords="362,122,402,196"  nohref="nohref" data-tooltip-content="" data-tooltip-title="">
-                <area shape="rect" coords="387,238,460,307"  nohref="nohref" data-tooltip-content="" data-tooltip-title="">
-                <area shape="rect" coords="138,154,243,262"  nohref="nohref" data-tooltip-content="" data-tooltip-title="">
-                <area shape="rect" coords="24,260,85,321"  nohref="nohref" data-tooltip-content="" data-tooltip-title="">
+                <area shape="rect" coords="27,30,135,146"  nohref="nohref" data-tooltip-content="Input: From the Right Leg Drive Board. Output: To the second 2-Channel EEG Board." data-tooltip-title="Input/Output">
+                <area shape="rect" coords="306,53,367,121"  nohref="nohref" data-tooltip-content="Texas Instruments INA111 Instrumentation Amplifier with a gain of 12.2" data-tooltip-title="Instrumentation Amplifier">
+                <area shape="rect" coords="496,55,563,121"  nohref="nohref" data-tooltip-content="The signal from the Right Leg Drive." data-tooltip-title="Input">
+                <area shape="rect" coords="362,122,402,196"  nohref="nohref" data-tooltip-content="With the Potentiometer you can set the gain between 6 and 100. Recommended is about 40." data-tooltip-title="Gain">
+                <area shape="rect" coords="387,238,460,307"  nohref="nohref" data-tooltip-content="Texas Instruments Op-Amp to amplify signal and as a 3rd order Besselworth filter to reduce 50Hz noise." data-tooltip-title="2-Channel Operational Amplifier">
+                <area shape="rect" coords="138,154,243,262"  nohref="nohref" data-tooltip-content="Protects the patient from ESD and limits current." data-tooltip-title="ESD protection">
+                <area shape="rect" coords="24,260,85,321"  nohref="nohref" data-tooltip-content="The input from the electrodes." data-tooltip-title="Input">
                 </map>
                 <p>EEG 2-Channel Board</p>
             </div>
-
+            <div class="prototype">
+                <img src="images/electrodes.jpg" alt="Ambu Neuroline 720 Electrodes">
+                <p>
+                    <span>Ambu Neuroline 720 Single Patient Surface Electrodes</span><br>
+                    <span>The Electrodes have a K-Connector with 1.5mm Diameter.</span><br>
+                    <span>The matching connectors to fit into custom enclosure.</span><br>
+                    <span>I used Multi-Contact MLB1.5R. They are available in many different colors.</span>
+                </p>
+            </div>
+            <h2><a id="software" class="anchor" href="#software" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>IDE/Editors:</h2>
+            <a href="https://www.eclipse.org/" target="_blank">Eclipse IDE</a>
+            <p>This project can be imported into Eclipse without changes. You must use the GCC Toolchain with Eclipse.</p><br>
+            <a href="https://github.com/leaflabs/maple-ide" target="_blank">Maple IDE</a>
+            <p>You can use the code in main.cpp with the Maple IDE without libmaple and makefiles. Of course you must import all other libraries into Maple. With Maple you can write code and program any board with the stm32 cortex m3 processor, like the Olimexino STM32.</p>
+            <a href="http://energia.nu/" target="_blank">Energia</a>
+            <p>With the Energia IDE you can program any Texas Instruments Microcontroller, like the one I used the MSP430G2553.</p>
+            <a href="https://atom.io/" target="_blank">Atom</a>
+            <p>Now I'm using the wonderful Atom Editor with the <a href="http://platformio.org/" target="_blank">PlatformIO</a> Package.</p>
+            <p>This is the perfect combination because you can customize the shit out of the Atom Editor and PlatformIO supports all main Microcontrollers like the Texas Instruments MSP Series, the Arm Cortex, Arduino of course and many many more.</p>
 
         </section>
         <footer>
