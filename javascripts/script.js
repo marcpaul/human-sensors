@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $('img[usemap]').imageMap();
     $("area").qtip({ // Grab all elements with a non-blank data-tooltip attr.
     content: {
         text: function(event, api) {
