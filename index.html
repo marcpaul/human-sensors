@@ -269,17 +269,17 @@
             </div>
             <h2><a id="my-prototypes" class="anchor" href="#my-prototypes" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>My Prototypes:</h2>
             <div class="prototype">
-                <img src="images/eeg_rld.jpg" alt="EEG Right Leg Drive" usemap="eeg-rld-map">
-                <map name="eeg-rld-map">
+                <img src="images/eeg_rld.png" alt="EEG Right Leg Drive" usemap="eeg-rld-areas">
+                <map name="eeg-rld-areas">
                 <!-- #$-:Image map file created by GIMP Image Map plug-in -->
                 <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
                 <!-- #$-:Please do not edit lines starting with "#$" -->
                 <!-- #$VERSION:2.3 -->
                 <!-- #$AUTHOR:MARC PAUL -->
-                <area shape="rect" coords="27,111,303,299"  nohref="nohref" data-tooltip-content="This is the DC/DC Converter Block. The Converter is a Recom RNM 3.305S. As I used the TI MSP microcontrollers the main power source is 3.7V LiPo. The DC/DC converter transforms the 3.7V to 5V. All other parts are filters to reduce noise from the power source. The 5V DC input is on the 2-pin connector." data-tooltip-title="DC/DC Converter">
-                <area shape="rect" coords="295,30,350,84"  nohref="nohref" data-tooltip-content="This is the Right Leg Drive Connector. Like the name suggests you put the electrodes on the Rigth Leg of the Patient." data-tooltip-title="Connector">
-                <area shape="rect" coords="362,74,440,163"  nohref="nohref" data-tooltip-content="The same Op-Amp is used on all boards to amplify the signal." data-tooltip-title="Operational Amplifier">
-                <area shape="rect" coords="422,185,468,275"  nohref="nohref" data-tooltip-content="Connects to first EEG Board. 5V DC Analog (filtered) and 5V DC Digital." data-tooltip-title="Output">
+                <area shape="rect" coords="405,15,945,345"  nohref="nohref" data-tooltip-content="This is the DC/DC Converter Block. The Converter is a Recom RNM 3.305S. As I used the TI MSP microcontrollers the main power source is 3.7V LiPo. The DC/DC converter transforms the 3.7V to 5V. All other parts are filters to reduce noise from the power source. The 5V DC input is on the 2-pin connector." data-tooltip-title="DC/DC Converter">
+                <area shape="rect" coords="60,15,180,225"  nohref="nohref" data-tooltip-content="Connects to first EEG Board. 5V DC Analog (filtered) and 5V DC Digital." data-tooltip-title="Output">
+                <area shape="rect" coords="135,255,285,405"  nohref="nohref" data-tooltip-content="The same Op-Amp is used on all boards to amplify the signal." data-tooltip-title="Operational Amplifier">
+                <area shape="rect" coords="315,390,420,495"  nohref="nohref" data-tooltip-content="This is the Right Leg Drive Connector. Like the name suggests you put the electrodes on the Rigth Leg of the Patient." data-tooltip-title="Connector">
                 </map>
                 <p>EEG Right Leg Drive</p>
             </div>
@@ -289,31 +289,41 @@
                 <a href="images/recom_filter_big.png" download target="_blank">Download Schematics</a>
             </div>
             <div class="prototype">
-                <img src="images/eeg_2ch.jpg" alt="EEG Board" usemap="eeg-2ch-map">
-                <map name="eeg-2ch-map">
+                <img src="images/eeg_ch.png" alt="EEG Board" usemap="eeg-ch-areas">
+                <map name="eeg-ch-areas">
                 <!-- #$-:Image map file created by GIMP Image Map plug-in -->
                 <!-- #$-:GIMP Image Map plug-in by Maurits Rijk -->
                 <!-- #$-:Please do not edit lines starting with "#$" -->
                 <!-- #$VERSION:2.3 -->
                 <!-- #$AUTHOR:MARC PAUL -->
-                <area shape="rect" coords="27,30,135,146"  nohref="nohref" data-tooltip-content="Input: From the Right Leg Drive Board. Output: To the second EEG Board." data-tooltip-title="Input/Output">
-                <area shape="rect" coords="306,53,367,121"  nohref="nohref" data-tooltip-content="Texas Instruments INA111 Instrumentation Amplifier with a gain of 12.2" data-tooltip-title="Instrumentation Amplifier">
-                <area shape="rect" coords="496,55,563,121"  nohref="nohref" data-tooltip-content="The signal from the Right Leg Drive." data-tooltip-title="Input">
-                <area shape="rect" coords="362,122,402,196"  nohref="nohref" data-tooltip-content="With the Potentiometer you can set the gain between 6 and 100. Recommended is about 40." data-tooltip-title="Gain">
-                <area shape="rect" coords="387,238,460,307"  nohref="nohref" data-tooltip-content="Texas Instruments Op-Amp to amplify signal and as a 3rd order Besselworth filter to reduce 50Hz noise." data-tooltip-title="2-Channel Operational Amplifier">
-                <area shape="rect" coords="138,154,243,262"  nohref="nohref" data-tooltip-content="Protects the patient from ESD and limits current." data-tooltip-title="ESD protection">
-                <area shape="rect" coords="24,260,85,321"  nohref="nohref" data-tooltip-content="The input from the electrodes." data-tooltip-title="Input">
+                <area shape="rect" coords="60,15,255,240"  nohref="nohref" data-tooltip-content="Input: From the Right Leg Drive Board. Output: To the second EEG Board." data-tooltip-title="Input/Output">
+                <area shape="rect" coords="30,405,165,525"  nohref="nohref" data-tooltip-content="The input from the electrodes." data-tooltip-title="Input">
+                <area shape="rect" coords="285,240,450,420"  nohref="nohref" data-tooltip-content="Protects the patient from ESD and limits current." data-tooltip-title="ESD protection">
+                <area shape="rect" coords="540,45,675,195"  nohref="nohref" data-tooltip-content="Texas Instruments Op-Amp to amplify signal and as a 3rd order Besselworth filter to reduce 50Hz noise." data-tooltip-title="2-Channel Operational Amplifier">
+                <area shape="rect" coords="675,150,750,330"  nohref="nohref" data-tooltip-content="With the Potentiometer you can set the gain between 6 and 100. Recommended is about 40." data-tooltip-title="Gain">
+                <area shape="rect" coords="720,345,900,510"  nohref="nohref" data-tooltip-content="Texas Instruments INA111 Instrumentation Amplifier with a gain of 12.2" data-tooltip-title="Instrumentation Amplifier">
+                <area shape="rect" coords="915,60,1035,195"  nohref="nohref" data-tooltip-content="The signal from the Right Leg Drive." data-tooltip-title="Input">
                 </map>
                 <p>EEG Board</p>
             </div>
             <div class="prototype">
-                <img src="images/electrodes.jpg" alt="Ambu Neuroline 720 Electrodes">
+                <h2>Other stuff</h2>
                 <p>
-                    <span>Ambu Neuroline 720 Single Patient Surface Electrodes</span><br>
+                    <span>We used Ambu Neuroline 720 Single Patient Surface Electrodes.</span><br>
                     <span>The Electrodes have a K-Connector with 1.5mm Diameter.</span><br>
-                    <span>The matching connectors to fit into custom enclosure.</span><br>
+                    <span>There are matching connectors to fit into custom enclosure.</span><br>
                     <span>I used Multi-Contact MLB1.5R. They are available in many different colors.</span>
                 </p>
+            </div>
+            <div class="prototype">
+                <h2>Example</h2>
+                <img src="images/emg1_1.png" alt="EMG captured with KST2">
+                <p>
+                    This is an example of an EMG.<br>
+                    The software I used is KST2.<br>
+                    The upper graphic shows the raw signal, the lower graphic is filtered with a 50Hz Notch Filter.
+                </p>
+                <a href="https://kst-plot.kde.org/" target="_blank">Download KST2</a>
             </div>
             <h2><a id="software" class="anchor" href="#software" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>IDE/Editors:</h2>
             <a href="https://www.eclipse.org/" target="_blank">Eclipse IDE</a>
